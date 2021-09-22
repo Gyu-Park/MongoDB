@@ -29,7 +29,7 @@ public class MongoMain
     public static void main( String[] args ) {
     try{
         // connect mongoDB by using ConnectionString, MongoClientSettings, and MongoClient
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://admin:<password>@cluster0.0k7o4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://name:<password>@cluster0.0k7o4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
         .applyConnectionString(connectionString)
         .retryWrites(true)
